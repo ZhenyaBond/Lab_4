@@ -1,16 +1,20 @@
+#pragma once
 #include "Flower.h"
 
 
-class Rose : public Flower
+class Rose: public Flower
 {
 public:
 	Rose();
-	Rose(char *);
-	void setColor(char *color);
-	void getColor();
+	Rose(int price,int size,int stem);
+	int getSize();
+	int getPrice();
+	int getStem();
 	~Rose();
 	void toConsole();
+	void about();
+
 
 private:
-	char *color;
+	int size, price, stem;
 };

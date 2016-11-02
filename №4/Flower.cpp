@@ -41,6 +41,6 @@ void Flower::toConsole()
 
 void Flower::addStem(char *newStem)
 {
-	stem.setStem(newStem);
-	stem.getStem();
+	stem->setStem(newStem);
+	stem->getStem();
 }

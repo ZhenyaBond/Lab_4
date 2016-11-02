@@ -1,8 +1,7 @@
 #include <iostream>
-#include "Seed.h"
 using namespace std;
 
-class Stem: public Seed
+class Stem
 {
 public:
 	Stem();
@@ -10,6 +9,7 @@ public:
 	void setStem(char* stem);
 	void getStem() const;
 	void toConsole();
+	virtual void setNumber(int){ cout << 1; }
 	~Stem();
 
 private:

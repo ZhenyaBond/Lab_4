@@ -89,9 +89,7 @@
     <ClInclude Include="Bouquet.h" />
     <ClInclude Include="Chrys.h" />
     <ClInclude Include="Flower.h" />
-    <ClInclude Include="Printer.h" />
     <ClInclude Include="Rose.h" />
-    <ClInclude Include="Seed.h" />
     <ClInclude Include="Stem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

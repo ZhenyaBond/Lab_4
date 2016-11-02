@@ -3,23 +3,31 @@
 
 Rose::Rose()
 {
-	std::cout << "Rose constructor\n";
+	cout << "Rose constructor\n";
 }
 
-Rose::Rose(char *x)
+Rose::Rose(int price,int size,int stem)
 {
-	this->color = x;
+	this->price = price;
+	this->size = size;
+	this->stem = stem;
 }
 
-void Rose::setColor(char *color)
+int Rose::getStem()
 {
-	this->color = color;
+	return this->stem;
 }
 
-void Rose::getColor()
+int Rose::getSize()
 {
-	std::cout << "\tThe color is: " << this->color << endl;
+	return this->size;
 }
+
+int Rose::getPrice()
+{
+	return this->price;
+}
+
 
 Rose::~Rose()
 {
@@ -28,5 +36,12 @@ Rose::~Rose()
 
 void Rose::toConsole()
 {
-	cout << typeid(this).name() << " " << color << endl;
+	cout << typeid(this).name() << " " << price << endl;
+}
+
+void Rose::about()
+{
+	cout << "The price is: " << this->getPrice() << endl;
+	cout << "The size is: " << this->getSize() << endl;
+	cout << "The stem is: " << this->getStem() << endl;
 }

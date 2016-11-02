@@ -1,58 +1,28 @@
 #pragma once
 #include <iostream>
+#include "Bouquet.h"
 #include "Stem.h"
-#include "Seed.h"
 using namespace std;
 
 
-class Flower: public Seed
+class Flower: public Bouquet
 {
 public:
 	Flower();
 	Flower(char *);
 	void setFlower(char* name);
 	void getFlower();
+	virtual int getSize() = 0;
+	virtual int getPrice() = 0;
 	~Flower();
-	void toConsole();//переопределение для создания объекта класса Flower, иначе Flower - абстрактный.
+	virtual void toConsole()=0;
+	//virtual void about() = 0;
 	static int getCounter();
 	void addStem(char *newStem);
+
 
 private:
 	char* name;
 	static int objectCounter;
-	Stem stem;
-};
-
-
-
-class Bush: protected Flower
-{
-public: const int age=1;
-		Bush();
-		Bush(int x)
-		{
-			this->type = x;
-		}
-		void toConsole() {}
-		int getAge() const
-		{
-			return age;
-		}
-protected: int type;
-};
-
-class Tree : public Bush
-{
-private: int year;
-public:
-	void toConsole() { }
-	Tree();
-	int getYear()
-	{
-	return (2016 - (age));
-	};
-	int getType()
-	{
-	return type;
-	};
+	Stem *stem;
 };

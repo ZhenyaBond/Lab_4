@@ -1,16 +1,19 @@
+#pragma once
 #include "Flower.h"
 
 
-class Chrys : public Flower
+class Chrys: public Flower
 {
 public:
 	Chrys();
-	Chrys(int);
-	void setNumFlo(int num);
-	void getNumFlo();
+	Chrys(int price,int size,int stem);
+	int getStem();
+	int getPrice();
+	int getSize();
 	~Chrys();
 	void toConsole();
+	void about();
 
 private:
-	int num;
+	int size,price,stem;
 };

@@ -6,19 +6,25 @@ Chrys::Chrys()
 	std::cout << "Chrys constructor\n";
 }
 
-Chrys::Chrys(int x)
+Chrys::Chrys(int price, int size, int stem)
 {
-	this->num = x;
+	this->price = price;
+	this->size = size;
+	this->stem = stem;
 }
 
-void Chrys::setNumFlo(int num)
+int Chrys::getStem()
 {
-	this->num = num;
+	return this->stem;
 }
 
-void Chrys::getNumFlo()
+int Chrys::getPrice()
 {
-	std::cout << "\tThe number is: " << this->num << endl;
+	return this->price;
+}
+int Chrys::getSize()
+{
+	return this->size;
 }
 
 Chrys::~Chrys()
@@ -28,5 +34,12 @@ Chrys::~Chrys()
 
 void Chrys::toConsole()
 {
-	cout << typeid(this).name() << " " << num << endl;
+	cout << typeid(this).name() << " " << price << endl;
+}
+
+void Chrys::about()
+{
+	cout << "The price is: " << this->getPrice() << endl;
+	cout << "The size is: " << this->getSize() << endl;
+	cout << "The stem is: " << this->getStem() << endl;
 }

@@ -1,19 +1,49 @@
-﻿Сборка начата 23.10.2016 13:47:00.
-     1>Проект "D:\ООП\3 семестр\№4\№4\№4.vcxproj" в узле 2 (целевые объекты Build).
+﻿Сборка начата 28.10.2016 9:02:01.
+     1>Проект "D:\ООП\3 семестр\Lab_4\№4\№4.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "№4.cpp"
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Bouquet.cpp Chrys.cpp Flower.cpp Rose.cpp "№4.cpp"
          №4.cpp
-     1>d:\ооп\3 семестр\№4\№4\№4.cpp(45): warning C4101: pfive: неиспользованная локальная переменная
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ООП\3 семестр\№4\Debug\№4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\ООП\3 семестр\№4\Debug\№4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ООП\3 семестр\№4\Debug\№4.lib" /MACHINE:X86 Debug\Bouquet.obj
-         Debug\Chrys.obj
-         Debug\Flower.obj
-         Debug\Rose.obj
-         Debug\Stem.obj
-         "Debug\№4.obj"
-         №4.vcxproj -> D:\ООП\3 семестр\№4\Debug\№4.exe
-     1>Сборка проекта "D:\ООП\3 семестр\№4\№4\№4.vcxproj" завершена (целевые объекты Build).
+     1>d:\ооп\3 семестр\lab_4\№4\flower.h(9): error C2504: Bouquet: не определен базовый класс
+         Rose.cpp
+     1>d:\ооп\3 семестр\lab_4\№4\chrys.h(6): error C2504: Flower: не определен базовый класс
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(36): error C2061: синтаксическая ошибка: идентификатор "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(37): error C2061: синтаксическая ошибка: идентификатор "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(41): error C2061: синтаксическая ошибка: идентификатор "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(42): error C2061: синтаксическая ошибка: идентификатор "Flower"
+         Flower.cpp
+     1>d:\ооп\3 семестр\lab_4\№4\rose.h(6): error C2504: Flower: не определен базовый класс
+     1>d:\ооп\3 семестр\lab_4\№4\chrys.h(6): error C2504: Flower: не определен базовый класс
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(36): error C2061: синтаксическая ошибка: идентификатор "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(37): error C2061: синтаксическая ошибка: идентификатор "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(41): error C2061: синтаксическая ошибка: идентификатор "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(42): error C2061: синтаксическая ошибка: идентификатор "Flower"
+         Chrys.cpp
+     1>d:\ооп\3 семестр\lab_4\№4\rose.h(6): error C2504: Flower: не определен базовый класс
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(36): error C2061: синтаксическая ошибка: идентификатор "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(37): error C2061: синтаксическая ошибка: идентификатор "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(41): error C2061: синтаксическая ошибка: идентификатор "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.h(42): error C2061: синтаксическая ошибка: идентификатор "Flower"
+         Bouquet.cpp
+     1>d:\ооп\3 семестр\lab_4\№4\flower.h(9): error C2504: Bouquet: не определен базовый класс
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.cpp(46): error C2440: =: невозможно преобразовать "Flower *" в "Bouquet *"
+                 Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.cpp(57): error C2440: =: невозможно преобразовать "Flower *" в "Bouquet *"
+                 Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.cpp(58): error C2039: next: не является членом "Flower"
+                 d:\ооп\3 семестр\lab_4\№4\flower.h(8): см. объявление "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.cpp(59): error C2039: prev: не является членом "Flower"
+                 d:\ооп\3 семестр\lab_4\№4\flower.h(8): см. объявление "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.cpp(69): error C2440: =: невозможно преобразовать "Flower *" в "Bouquet *"
+                 Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.cpp(70): error C2039: next: не является членом "Flower"
+                 d:\ооп\3 семестр\lab_4\№4\flower.h(8): см. объявление "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.cpp(71): error C2039: prev: не является членом "Flower"
+                 d:\ооп\3 семестр\lab_4\№4\flower.h(8): см. объявление "Flower"
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.cpp(162): error C3867: type_info::name: в вызове функции отсутствует список аргументов; используйте "&type_info::name" для создания указателя на член
+     1>d:\ооп\3 семестр\lab_4\№4\bouquet.cpp(172): error C2065: head: необъявленный идентификатор
+         Создание кода...
+     1>Сборка проекта "D:\ООП\3 семестр\Lab_4\№4\№4.vcxproj" завершена (целевые объекты Build) с ошибкой.
 
-Сборка успешно завершена.
+Ошибка сборки.
 
-Затраченное время: 00:00:01.57
+Затраченное время: 00:00:03.41
